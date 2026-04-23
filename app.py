@@ -2,8 +2,45 @@ import streamlit as st
 from openai import OpenAI
 
 # 🔑 PUT YOUR API KEY HERE
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="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")
 
+def guess_game():
+    print("🎮 Welcome to the Number Guessing Game!")
+    number = random.randint(1, 100)
+    attempts = 0
+
+    while True:
+        guess = int(input("Enter your guess (1-100): "))
+        attempts += 1
+
+        if guess < number:
+            print("📉 Too low! Try again.")
+        elif guess > number:
+            print("📈 Too high! Try again.")
+        else:
+            print(f"🎉 Correct! You guessed it in {attempts} attempts.")
+            break
+
+guess_
+
+def guess_game():
+    print("🎮 Welcome to the Number Guessing Game!")
+    number = random.randint(1, 100)
+    attempts = 0
+
+    while True:
+        guess = int(input("Enter your guess (1-100): "))
+        attempts += 1
+
+        if guess < number:
+            print("📉 Too low! Try again.")
+        elif guess > number:
+            print("📈 Too high! Try again.")
+        else:
+            print(f"🎉 Correct! You guessed it in {attempts} attempts.")
+            break
+
+guess_game()
 # Page config
 st.set_page_config(page_title="Smart Code Translator", layout="wide")
 
