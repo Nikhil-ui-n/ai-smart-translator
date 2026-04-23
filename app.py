@@ -4,9 +4,9 @@ import streamlit as st
 from openai import OpenAI
 
 # ---------- Load API key safely ----------
-api_key = st.secrets.get("OPENAI_API_KEY", None)
+api_key = st.secrets.get("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", None)
 if not api_key:
-    api_key = os.getenv("OPENAI_API_KEY")
+    api_key = os.getenv("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")
 
 if not api_key:
     st.error("❌ OpenAI API key not found. Add it to .streamlit/secrets.toml or set OPENAI_API_KEY.")
