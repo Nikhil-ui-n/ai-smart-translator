@@ -40,7 +40,7 @@ code = st.text_area("📝 Paste your code here:", height=300)
 
 def ask_openai(prompt):
     from openai import OpenAI
-    client = OpenAI(api_key="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")
+    client = OpenAI(api_key="AIzaSyBzNvWXM77Qs2ldd_F-B_hPHfSR3ONkRco")
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
